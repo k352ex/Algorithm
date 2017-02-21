@@ -1,8 +1,3 @@
-// 제출일자 : 11월 12일 목요일
-// 컴퓨터공학과 20143057 박민기
-// ShellSort 정렬 알고리즘
-// 사용언어 : C언어
-
 #include <stdio.h>
 
 int* ShellSort(int A[], int length) {

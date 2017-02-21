@@ -1,6 +1,3 @@
-// Bubble Sort
-// 20143057 ÄÄÇ»ÅÍ°øÇÐ°ú ¹Ú¹Î±â
-
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -20,12 +17,12 @@ void BubbleSort(int testcase[], int len) {
 
 int main(void) {
 	int testcase[] = { 40, 10, 50, 90, 20, 80, 30, 60 };
-	int len = sizeof(testcase) / sizeof(int); // ¹è¿­ÀÇ ±æÀÌ ±¸ÇÏ±â
+	int len = sizeof(testcase) / sizeof(int); // ï¿½è¿­ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ï±ï¿½
 
-	BubbleSort(testcase, len); // ÇÔ¼öÈ£Ãâ
+	BubbleSort(testcase, len); // ï¿½Ô¼ï¿½È£ï¿½ï¿½
 
 	for (int i = 0; i < len; i++) {
-		printf("%d ", testcase[i]); // Á¤·ÄµÈ ¹è¿­ Ãâ·Â
+		printf("%d ", testcase[i]); // ï¿½ï¿½ï¿½Äµï¿½ ï¿½è¿­ ï¿½ï¿½ï¿½ï¿½
 	}
 
 	return 0;
