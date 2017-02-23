@@ -8,7 +8,7 @@ int main() {
 	int n;
 	scanf("%d", &n);
 	
-	set<int> s;
+	multiset<int> s; // 숫자카드2문제는 같은 값을 여러개 가져야 하므로 Multiset을 사용한다.
 	
 	// 삽입하는데 n개 있으니 O(NlogN)
 	for(int i=0; i<n; ++i){
