@@ -3,7 +3,7 @@
 using namespace std;
 
 int main() {
-	priority_queue<int> q; // 최대 힙
+	priority_queue<int, vector<int>, greater<int>> q; // 최소 힙
 	int testcase;
 	unsigned int x;
 	
