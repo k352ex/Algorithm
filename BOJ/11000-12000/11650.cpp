@@ -14,6 +14,7 @@ bool compare(const pair<int, int> &u, const pair<int, int> &r) {
 	
 	return false;
 }
+
 int main() {
 	int n;
 	vector<pair<int, int>> ans;
