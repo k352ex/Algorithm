@@ -1,6 +1,5 @@
 // 1032번: 명령프롬프트 
 
-
 #include <iostream>
 #include <string>
 #include <vector>

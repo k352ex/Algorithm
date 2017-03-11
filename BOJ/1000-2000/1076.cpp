@@ -2,6 +2,7 @@
 #include <string>
 #include <map>
 using namespace std;
+
 int main() {
     map<string, int> d = {
         {"black", 0}, {"brown", 1}, {"red", 2},
