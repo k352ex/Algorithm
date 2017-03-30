@@ -21,6 +21,7 @@ int main() {
     }
     
     // 경유지 -> 시작점 -> 도착점
+    // 시간복잡도는 O(N^3)
     for(int k=0; k<n; ++k) {
         for(int i=0; i<n; ++i) {
             for(int j=0; j<n; ++j) {
