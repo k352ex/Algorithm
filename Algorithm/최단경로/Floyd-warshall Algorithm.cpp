@@ -8,6 +8,7 @@ int main() {
     int n, m, distance[100][100];
     cin >> n >> m;
     
+    // i와 j가 같을때는 0으로 하고 나머지는 나올 수 없는 수로 초기화 해논다.
     for(int i=0; i<n; ++i) {
         for(int j=0; j<n; ++j) {
             distance[i][j] = i == j ? 0 : INF;
