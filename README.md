@@ -5,7 +5,7 @@
 - Graph
     - Depth first search (깊이우선탐색)
 
-
+        ```c
         void DFS(int v) {
             
             visited[v] = true; 
@@ -16,7 +16,7 @@
                     DFS(next);
             }
         }
-
+        ```
 
 - Recursion
     - Memoization
