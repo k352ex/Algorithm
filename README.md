@@ -2,6 +2,22 @@
 
  알고리즘 개념을 정리하고 구현한 파일을 모아놓는 폴더
 
+- Graph
+    - Depth first search (깊이우선탐색)
+
+
+        void DFS(int v) {
+            
+            visited[v] = true; 
+            cout << "vertex: " << v << '\n';
+            
+            for(auto next : adj[v]) {
+                if (!visited[next])
+                    DFS(next);
+            }
+        }
+
+
 - Recursion
     - Memoization
     
