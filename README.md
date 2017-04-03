@@ -84,6 +84,27 @@
         ```
     
     - CountingSort
+    
+        ```c
+        memset(count, 0, sizeof(count));
+        
+        // count 배열에 입력받은 값의 count를 1씩 증가
+        // 입력되는 순서는 상관이 없다.
+        while(n--) {
+            int num;
+            cin >> num;
+            count[num]++;
+        }
+        
+        // count 배열에 들어있는 숫자만큼 index를 출력시켜주면 된다.
+        for(int i=1; i<=10000; ++i) {
+            if(count[i]) {
+                for(int j=1; j<= count[i]; ++j) 
+                    cout << i << '\n';
+            }
+        }
+        ```
+        
     - QuickSort
 - Search
     - BinarySearch
