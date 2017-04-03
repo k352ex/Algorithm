@@ -23,9 +23,66 @@
     
 - Sort
     - BubbleSort
+    - 
+        ```c
+        void BubbleSort(int testcase[], int len) {
+        	int i, j, temp;
+        
+        	for (i = 1; i <= len - 1; i++) {
+        		for (j = 1; j <= len - i; j++) {
+        			if (testcase[j - 1] > testcase[j]) {
+        				temp = testcase[j];
+        				testcase[j] = testcase[j - 1];
+        				testcase[j - 1] = temp;
+        			}
+        		}
+        	}
+        }
+        ```
+        
     - SelectionSort
+    
+        ```c
+        int* SelectionSort(int A[], int length) {
+        	int i, j, temp;
+        	int min;
+        	for (i = 0; i <= length - 2; i++) {
+        		min = i;
+        		for (j = i + 1; j <= length - 1; j++) {
+        			if (A[j] < A[min]) {
+        				min = j;
+        			}
+        		}
+        		temp = A[i];
+        		A[i] = A[min];
+        		A[min] = temp;
+        	}
+        	return A;
+        }
+        ```
     - MergeSort
+    
     - ShellSort
+    
+        ```c
+        int* ShellSort(int A[], int length) {
+        	int gap[] = { 5,3,1 };
+        	int i, j, k, currentElement;
+        	for (i = 0; i < sizeof(gap) / sizeof(int); i++) {
+        		for (j = gap[i]; j <= length - 1; j++) {
+        			currentElement = A[j];
+        			k = j;
+        			while (k >= i && A[k - i] > currentElement) {
+        				A[k] = A[k - i];
+        				k = k - i;
+        			}
+        			A[k] = currentElement;
+        		}
+        	}
+        	return A;
+         }
+        ```
+    
     - CountingSort
     - QuickSort
 - Search
@@ -35,16 +92,16 @@
 - 최단경로
     - 플로이드 와샬 알고리즘
     
-    ```c
-    // 경유지 -> 시작점 -> 도착점 순
-    for(int k=0; k<n; ++k) {
-        for(int i=0; i<n; ++i) {
-            for(int j=0; j<n; ++j) {
-                dist[i][j] = min(dist[i][j], dist[i][k]+dist[k][j]);
+        ```c
+        // 경유지 -> 시작점 -> 도착점 순
+        for(int k=0; k<n; ++k) {
+            for(int i=0; i<n; ++i) {
+                for(int j=0; j<n; ++j) {
+                    dist[i][j] = min(dist[i][j], dist[i][k]+dist[k][j]);
+                }
             }
         }
-    }
-    ```
+        ```
     
 ## BOJ
 
