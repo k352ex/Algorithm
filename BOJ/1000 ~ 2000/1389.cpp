@@ -53,7 +53,7 @@ int main() {
     }
     
     sort(minimum.begin(), minimum.end(), compare);
-        
+
     cout << minimum[0].first << "\n";
 	return 0;
 }
