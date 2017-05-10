@@ -20,7 +20,24 @@
 
 - Recursion
     - Memoization
-    
+        - Dynamic Programming 에서 주로 사용 
+        ```c
+        /* 이항계수를 구하는  알고리즘 */
+        long long memo[1001][1001]; // Memoization을 위한 메모리 공간
+
+        long long int bino(long long n, long long k) {
+            long long sum = 0;
+            
+            if(k==0 || n == k) return 1;
+            if(memo[n][k] != -1) return memo[n][k];
+            
+            sum = (bino(n-1, k-1)  + bino(n-1,k))% 10007;
+            memo[n][k] = sum; // Memoization 사용
+            
+            return memo[n][k];
+        }
+        ```
+        
 - Sort
     - BubbleSort
     - 
@@ -132,7 +149,10 @@
   - 문제 종류   
     - 구현
     - 수학
+    - 시뮬레이션
+    - 브루트 포스
     - 다이나믹 프로그래밍
+    - 백트래킹
     - 문자열 처리
     - 그리디 알고리즘
     - 정렬
